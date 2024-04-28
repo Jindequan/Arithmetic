@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "题库",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "head": "../../components/Head"
+  }
+}

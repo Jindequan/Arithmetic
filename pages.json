@@ -1,0 +1,47 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path": "pages/index/index", // 首页
+		    "style": {
+		        "navigationBarTitleText": "首页",
+		        "navigationStyle": "custom"
+		    }
+		},
+		{
+		    "path": "pages/question/index", //题库
+		    "style": {
+		        "navigationBarTitleText": "题库",
+		        "navigationStyle": "custom"
+		    }
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+	    "autoscan": true,
+	    "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"condition": { //模式配置，仅开发期间生效
+	    "current": 0, //当前激活的模式(list 的索引项)
+	    "list": [
+	        {
+	            "path": "index/index"
+	        }
+	    ]
+	},
+	// 分包预载配置
+	"preloadRule": {
+	    // 当我们进入了首页以后就会预下载分包
+	    "pages/index/index": {
+	        "network": "all", //在指定网络下预下载，可选值为：all（不限网络）、wifi（仅wifi下预下载）
+	        "packages": [
+	            
+	        ] //进入页面后预下载分包
+	    }
+	},
+	"uniIdRouter": {}
+}

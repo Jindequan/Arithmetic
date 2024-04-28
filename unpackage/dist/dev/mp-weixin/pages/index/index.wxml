@@ -1,0 +1,1 @@
+<view class="content"><image class="logo" src="/static/logo.png"></image><label class="title">{{a}}</label><view wx:for="{{b}}" wx:for-item="item" class="table"><view wx:for="{{item.a}}" wx:for-item="i" class="row" style="{{'background-color:' + i.b}}" bindtap="{{i.c}}">{{i.a}}</view></view><bottom-nav class="r" u-r="ButtomNav" u-i="49846db8-0" bind:__l="__l"></bottom-nav></view>

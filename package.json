@@ -1,0 +1,19 @@
+{
+  "name": "Arithmetic",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Devin",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.7.2",
+    "uni-simple-router": "^2.0.6",
+    "uview-ui": "^1.8.4",
+    "vue-baidu-map": "^0.21.22",
+    "vue-clipboard2": "^0.3.1",
+    "vuex-persistedstate": "^4.0.0"
+  }
+}
